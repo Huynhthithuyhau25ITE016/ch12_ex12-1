@@ -11,6 +11,7 @@
     <main>
 
         <h1>Your Cart</h1>
+        <p>Session ID: <?php echo htmlspecialchars(session_id()); ?></p>
         <?php if (empty($_SESSION['cart12']) || count($_SESSION['cart12']) == 0) : ?>
             <p>There are no items in your cart.</p>
         <?php else: ?>
