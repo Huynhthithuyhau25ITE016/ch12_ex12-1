@@ -11,6 +11,7 @@
     <main>
 
         <h1>Add Item</h1>
+        <p>Session ID: <?php echo htmlspecialchars(session_id()); ?></p>
         <form action="." method="post">
             <input type="hidden" name="action" value="add">
 
